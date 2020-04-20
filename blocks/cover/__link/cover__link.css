@@ -1,0 +1,23 @@
+.cover__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* .cover__link:after {
+  content:'';
+  background: rgba(42, 44, 47, 1);
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.5s linear;
+}
+
+.cover__link:hover:after {
+  opacity: .8;
+} */

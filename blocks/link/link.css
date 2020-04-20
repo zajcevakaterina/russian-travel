@@ -1,0 +1,12 @@
+.link {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  /* использовала border-bottom, чтобы было более прогнозируемое поведение при ховере и потому что
+      лучше поддерживается браузерами, чем text-underline-position*/
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: .8;;
+  transition: opacity 0.5s linear;
+}

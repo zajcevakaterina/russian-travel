@@ -1,0 +1,61 @@
+@import url(./__title/place__title.css);
+@import url(./__image/place__image.css);
+@import url(./__website/place__website.css);
+@import url(./__url-heading/place__url-heading.css);
+@import url(./__link/place__link.css);
+@import url(./__text/place__text.css);
+@import url(./__paragraph/place__paragraph.css);
+
+.place {
+  display: grid;
+  grid-template-columns: fit-content(460px) fit-content(484px);
+  grid-template-rows: repeat(2, fit-content(460px));
+  grid-template-areas:
+  "title website"
+  "image text";
+  column-gap: 40px;
+  /* чуть больше gap, чтобы приблизиться к PixelPerfect */
+  row-gap: 48px;
+  padding-bottom: 74px;
+  /* сделала меньше padding для PixelPerfect */
+}
+
+.place:last-of-type {
+  padding-bottom: 92px;
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    grid-template-columns: fit-content(440px) fit-content(456px);
+    grid-template-rows: repeat(2, fit-content(440px));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    grid-template-columns: fit-content(340px) fit-content(352px);
+    grid-template-rows: repeat(2, fit-content(445px));
+    column-gap: 28px;
+    padding-bottom: 72px;
+  }
+  .place:last-of-type {
+    padding-bottom: 88px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .place {
+    grid-template-areas:
+    "title"
+    "image"
+    "text";
+    padding-bottom: 48px;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(550px);
+    row-gap: 32px;
+  }
+  .place:last-of-type {
+    padding-bottom: 64px;
+  }
+}
+

@@ -1,10 +1,17 @@
-@import url(./_underline_none/header__lang-link_underline_none.css);
+@import url(./_state_active/header__lang-link_underline_active.css);
 
 .header__lang-link {
   font-size: 24px;
   line-height: 1.17;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header__lang-link:hover {
+  opacity: .8;;
+  transition: opacity 0.5s linear;
 }
 
 @media screen and (max-width: 320px) {

@@ -1,12 +1,17 @@
 .cover__link {
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-image: url(../../../images/cover/__background.jpg);
+  background-size: cover;
 }
 
-/* .cover__link:after {
+.cover__link:after {
   content:'';
   background: rgba(42, 44, 47, 1);
   opacity: .3;
@@ -20,4 +25,4 @@
 
 .cover__link:hover:after {
   opacity: .8;
-} */
+}
